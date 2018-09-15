@@ -99,6 +99,16 @@ void loop()
     intOperationType = random(1, 3);
     intFirstNumber = random(1, 100);
     intSecondNumber = random(1, 100);
+    if (intOperationType == 1)
+    {
+      while ((intFirstNumber + intSecondNumber) > 100)
+      {
+        intFirstNumber = random(1, 100);
+        intSecondNumber = random(1, 100);
+      }
+    }
+    intFirstNumber = random(1, 100);
+    intSecondNumber = random(1, 100);
     if (intFirstNumber < intSecondNumber)
     {
       int intTemp = intFirstNumber;
@@ -164,6 +174,14 @@ void loop()
     intOperationType = random(1, 3);
     intFirstNumber = random(1, 100);
     intSecondNumber = random(1, 100);
+    if (intOperationType == 1)
+    {
+      while ((intFirstNumber + intSecondNumber) > 100)
+      {
+        intFirstNumber = random(1, 100);
+        intSecondNumber = random(1, 100);
+      }
+    }
     if (intFirstNumber < intSecondNumber)
     {
       int intTemp = intFirstNumber;
