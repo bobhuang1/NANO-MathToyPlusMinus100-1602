@@ -107,8 +107,9 @@ void loop()
         intSecondNumber = random(1, 100);
       }
     }
-    intFirstNumber = random(1, 100);
-    intSecondNumber = random(1, 100);
+    // NOTE: the two random() calls that used to follow here were a copy/paste
+    // remnant: they re-rolled the pair AFTER the sum guard, so stage-1
+    // questions could still exceed 100. Deleted - the guarded pair is kept.
     if (intFirstNumber < intSecondNumber)
     {
       int intTemp = intFirstNumber;
